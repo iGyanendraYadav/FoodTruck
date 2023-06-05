@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <>
-      <div className="bg-gradient-to-r from-emerald-400 to-pink-600 text-white">
+      <div className="bg-gradient-to-r from-emerald-400 to-pink-600 text-white font-Poppins">
         <div className="container mx-auto">
           <div className="flex justify-center items-center py-5">
             <Image src="/logo.png" width={129} height={129} alt="logo" />
