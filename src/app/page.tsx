@@ -4,11 +4,11 @@ export default function Home() {
   return (
     <>
       <div className="bg-gradient-to-r from-emerald-400 to-pink-600 text-white font-Poppins">
-        <div className="container mx-auto">
+        <div className="container mx-auto ">
           <div className="flex justify-center items-center py-5">
             <Image src="/logo.png" width={129} height={129} alt="logo" />
           </div>
-          <div className="flex flex-col lg:flex-row justify-center items-center py-20 mx-5 lg:mx-12">
+          <div className="flex flex-col lg:flex-row justify-center items-center py-20 mx-5 lg:mx-12  ">
             <div className="flexOne w-auto lg:w-1/2 flex flex-col justify-start items-start space-y-3">
               <span className="text-5xl lg:text-7xl font-extrabold uppercase">
                 Welcome
