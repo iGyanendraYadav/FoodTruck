@@ -4,6 +4,11 @@ import { AiFillStar } from 'react-icons/ai'
 
 type Props = {}
 
+export const metadata = {
+    title: 'FoodTruck : Reviews',
+    description: 'We have got 4.8 star rating for our service.',
+  }
+
 const Reviews = (props: Props) => {
   return (
     <div className='font-Poppins bg-emerald-500 text-white'>

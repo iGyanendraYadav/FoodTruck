@@ -3,6 +3,11 @@ import React from "react";
 
 type Props = {};
 
+export const metadata = {
+  title: 'FoodTruck : About Us',
+  description: 'This project has been developed by Gyanendra Yadav.',
+}
+
 const About = (props: Props) => {
   return (
     <>

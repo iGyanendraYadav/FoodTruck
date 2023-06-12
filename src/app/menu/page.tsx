@@ -3,6 +3,11 @@ import React from 'react'
 
 type Props = {}
 
+export const metadata = {
+    title: 'FoodTruck : Menu',
+    description: 'Let us see what we have to serve you !!!',
+  }
+
 const Menu = (props: Props) => {
   return (
     <div className='font-Poppins bg-emerald-500 text-white'>
