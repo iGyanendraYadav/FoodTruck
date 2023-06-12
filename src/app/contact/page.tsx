@@ -80,7 +80,7 @@ const Contact = (props: Props) => {
           <div className="container mx-auto">
             <div className="flex flex-col justify-center items-center space-y-8">
               <Image className="" src="/small.png" width={266} height={158} alt="smallOne"/>
-              <span className="text-xl lg:text-3xl font-bold uppercase">it's trucking good !</span>
+              <span className="text-xl lg:text-3xl font-bold uppercase">it&apos;s trucking good !</span>
               <p className="mx-10 lg:mx-60">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis praesentium impedit aut illo qui ut porro quidem nihil aperiam corporis iste, fuga explicabo sint numquam fugiat.</p>
 
               <div className="flex flex-row justify-center items-center space-x-5">
