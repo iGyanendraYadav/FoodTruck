@@ -5,7 +5,7 @@ export default function Home() {
     <>
       <div className="bg-gradient-to-b from-emerald-500 to-cyan-600 text-white font-Poppins">
         <div className="container mx-auto pt-0">
-          <div className="flex flex-col lg:flex-row justify-center items-center py-20 mx-5 lg:mx-12  ">
+          <div className="flex flex-col lg:flex-row justify-center items-center pt-10 pb-10 lg:pb-20 mx-5 lg:mx-12  ">
             <div className="flexOne w-auto lg:w-1/2 flex flex-col justify-start items-start space-y-3">
               <span className="text-5xl lg:text-7xl font-extrabold uppercase">
                 Welcome
@@ -31,7 +31,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="dailySpecial flex flex-col lg:flex-row justify-center items-center py-24 mx-5 lg:mx-12 space-x-0 lg:space-x-16">
+          <div className="dailySpecial flex flex-col lg:flex-row justify-center items-center py-8 lg:py-12 mx-5 lg:mx-12 space-x-0 lg:space-x-16">
             <div className="FlexLeft w-auto lg:w-[60%] grid grid-cols-1 lg:grid-cols-4 gap-0 order-2 lg:order-1">
               {/* <div className="FlexLeft w-auto lg:w-[60%] flex flex-col lg:flex-row justify-center items-center"> */}
               <div className="IceCreameBox p-4 hover:bg-cyan-400  flex flex-col justify-center items-center space-y-5 border border-emerald-300 border-opacity-30 hover:border-opacity-0">

@@ -4,9 +4,13 @@ import Header from '../../components/Header';
 import { Inter } from 'next/font/google'
 import Image from 'next/image';
 import { useState } from 'react';
-import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+import { AiOutlineMenu, AiOutlineClose, AiOutlineStar, AiOutlineUser } from "react-icons/ai";
 import Link from 'next/link';
 import Contact from './contact/page';
+import ModernNav from '../../components/ModernNav';
+import { AiOutlineHome } from 'react-icons/ai';
+import { BsCurrencyRupee, BsInfo, BsInfoSquare } from 'react-icons/bs';
+import { MdOutlineReviews } from 'react-icons/md';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -35,38 +39,12 @@ export default function RootLayout({
       <body className={inter.className}>
       {/* <Header/> */}
 
-{/* Header Components */}
-<div  className=" w-full shadow-md fixed z-10  top-0 left-0 font-Poppins ">
-        <div className="flex flex-col justify-center items-center  bg-gradient-to-b from-emerald-700 to-emerald-500  py-5 space-y-3">
-        <Image className='py-2' src="/logo.png" width={129} height={129} alt="logo" />
 
-          <div
-            onClick={() => setOpen(!open)}
-            className="text-2xl cursor-pointer lg:hidden p-3 rounded-full bg-white text-pink-600 "
-          >
-            {open ? <span className=" "><AiOutlineClose /></span>  : <span className=""><AiOutlineMenu /></span> }
-          </div>
-          <ul
-            className={`lg:flex lg:justify-center lg:items-center   pt-2 md:pt-0  lg:pt-0 absolute lg:static text-gray-700 lg:text-white  bg-gray-200 lg:bg-transparent    lg:z-auto z-[-1] left-0  md:w-full lg:left-0 w-full  lg:pl-0 pl-0 transition-all duration-500 ease-in ${
-              open
-                ? "top-56 md:top-[225px] opacity-100"
-                : "top-[-500px] opacity-0 md:opacity-100"
-            } `}
-          >
-            {Pages.map((page, i) => {
-              return (
-                <li
-                  key={i}
-                  className=" text-xl md:my-0 my-2 p-2  text-center  cursor-pointer hover:bg-gray-300   lg:hover:bg-transparent  "
-                >
-                  <Link href={page.link}>{page.name}</Link>
-                </li>
-              );
-            })}
-          </ul>
-        </div>
-      </div>
-{/* Header Components */}
+
+
+{/* New Header */}
+<Header/>
+{/* New Header */}
 
 
         {children}
@@ -76,7 +54,18 @@ export default function RootLayout({
         <Contact />
         {/* Footer Component */}
 
+{/* <ModernNav/> */}
 
+<div className="ModernNav w-full fixed bottom-3 lg:bottom-4">
+  <div className="container mx-auto">
+        <div className="flex flex-row items-center justify-center space-x-3 bg-pink-400 py-2 mx-20 lg:mx-[520px] bg-opacity-50 backdrop-filter backdrop-blur-2xl rounded-xl">
+          <span className=" bg-pink-700 p-2 rounded-xl"><Link href="/"><span className='text-2xl text-white'><AiOutlineHome/></span></Link></span>
+          <span className=" bg-pink-700 p-2 rounded-xl"><Link href="/menu"><span className='text-2xl text-white'><BsCurrencyRupee/></span></Link></span>
+          <span className=" bg-pink-700 p-2 rounded-xl"><Link href="/reviews"><span className='text-2xl text-white'><AiOutlineStar/></span></Link></span>
+          <span className=" bg-pink-700 p-2 rounded-xl"><Link href="/aboutus"><span className='text-2xl text-white'><AiOutlineUser/></span></Link></span>
+        </div>
+  </div>
+</div>
 
 
         </body>

@@ -9,7 +9,7 @@ const About = (props: Props) => {
       <div className="bg-emerald-500 text-white font-Poppins">
         <div className="container mx-auto py-20">
           <div className="flex flex-col lg:flex-row justify-center items-center space-x-0 lg:space-x-20 space-y-16 lg:space-y-0 mx-5 lg:mx-12">
-            <Image src="/about.jpg" width={475} height={645} alt="about" />
+            <Image  src="/about2.jpg" width={475} height={645} alt="about" />
             <div className="flexTwo w-auto lg:w-1/2 flex flex-col justify-start items-start space-y-3">
               <span className="text-5xl lg:text-7xl font-extrabold uppercase">
                 About Us

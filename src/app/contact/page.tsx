@@ -9,7 +9,7 @@ const Contact = (props: Props) => {
   return (
     <>
       <div className="bg-emerald-500 text-white font-Poppins">
-        <div className="container mx-auto py-20">
+        <div className="container mx-auto py-10">
           <div className="flex flex-col lg:flex-row justify-center items-center space-x-0 lg:space-x-20 space-y-16 lg:space-y-0 mx-8 lg:mx-12">
            
             <div className="flexTwo w-auto lg:w-1/2 flex flex-col justify-start items-start space-y-5 lg:space-y-8">
@@ -38,6 +38,8 @@ const Contact = (props: Props) => {
                 </div>
               </div>
 
+
+              <a href="http://www.gyanindra.com" target="_blank" rel="noopener noreferrer">
               <div className="flex flex-row justify-center items-center space-x-5">
                 <span className="icon text-3xl text-white p-3 rounded-full border border-cyan-200"><BsGlobe/></span>
                 <div className="flex flex-col justify-start items-start">
@@ -45,6 +47,7 @@ const Contact = (props: Props) => {
                   <span className="text-base ">www.gyanindra.com</span>
                 </div>
               </div>
+              </a>
             </div>
 
             <div className="lg:w-1/3 md:w-1/2  flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
@@ -78,12 +81,12 @@ const Contact = (props: Props) => {
               <p className="mx-10 lg:mx-60">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis praesentium impedit aut illo qui ut porro quidem nihil aperiam corporis iste, fuga explicabo sint numquam fugiat.</p>
 
               <div className="flex flex-row justify-center items-center space-x-5">
-                <span className="text-3xl p-2 text-white hover:text-pink-700 bg-pink-500 hover:bg-white"><AiFillFacebook/></span>
+              <span className="text-3xl p-2 text-white hover:text-pink-700 bg-pink-500 hover:bg-white"><AiFillFacebook/></span>
                 <span className="text-3xl p-2 text-white hover:text-pink-700 bg-pink-500 hover:bg-white"><AiOutlineTwitter/></span>
                 <span className="text-3xl p-2 text-white hover:text-pink-700 bg-pink-500 hover:bg-white"><AiFillYoutube/></span>
               </div>
 
-              <span className="text-sm pt-16 pb-5">Copyright @ 2023 || Designed by Gyanindra Yadav</span>
+              <span className="text-sm pt-16 pb-20 lg:pb-0">Copyright @ 2023 || Designed by Gyanindra Yadav</span>
             </div>
           </div>
         </div>
